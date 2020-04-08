@@ -33,7 +33,6 @@ public class IlnurMamedbakovCode implements Player {
             lastxB = xB;
             lastxC = xC;
             numberGames = 1;
-            System.out.println(" первый раз");
             return (int) (1 + Math.random()*3);
         }
 
@@ -51,7 +50,6 @@ public class IlnurMamedbakovCode implements Player {
             lastxB = xB;
             lastxC = xC;
             numberGames = numberGames + 1;
-            System.out.println(" второй раз");
             return sortedPresentSquares.get(0);
         }
 

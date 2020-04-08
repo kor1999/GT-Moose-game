@@ -17,7 +17,7 @@ public class Main {
         players.add(pl2);
         System.out.println();
         System.out.println("test 1 with Random and greedy");
-        ArrayList results = tournament(players, 10);
+        ArrayList results = tournament(players, 100);
         System.out.println("Random Agent           = " + results.get(0));
         System.out.println("Greedy Agent           = " + results.get(1));
 
@@ -27,7 +27,7 @@ public class Main {
         players.set(1, pl2);
         System.out.println();
         System.out.println("test 2 with almost greedy and greedy");
-        results = tournament(players, 10);
+        results = tournament(players, 100);
         System.out.println("Almost Greedy Agent    = " + results.get(0));
         System.out.println("Greedy Agent           = " + results.get(1));
 
@@ -37,7 +37,7 @@ public class Main {
         players.set(1, pl2);
         System.out.println();
         System.out.println("test 3 with smart1 and greedy");
-        results = tournament(players, 10);
+        results = tournament(players, 100);
         System.out.println("Smart1 Agent           = " + results.get(0));
         System.out.println("Greedy Agent           = " + results.get(1));
 
@@ -47,7 +47,7 @@ public class Main {
         players.set(1, pl2);
         System.out.println();
         System.out.println("test 4 with Ilnur Mamedbakov and greedy");
-        results = tournament(players, 10);
+        results = tournament(players, 100);
         System.out.println("Ilnur Mamedbakov Agent = " + results.get(0));
         System.out.println("Greedy Agent           = " + results.get(1));
 
@@ -60,7 +60,7 @@ public class Main {
         players.add(pl5);
         System.out.println();
         System.out.println("test 5 with all agents");
-        results = tournament(players, 10);
+        results = tournament(players, 100);
         System.out.println("Random Agent           = " + results.get(0));
         System.out.println("Greedy Agent           = " + results.get(1));
         System.out.println("Almost Greedy Agent    = " + results.get(2));
@@ -173,7 +173,7 @@ class Smart1Player implements Player {
         for (int i = arr.length - 1; i > 0; i--) {
             for (int j = 0; j < i; j++) {
 
-                if (arr[j] > arr[j + 1]) {
+                if (arr[j] < arr[j + 1]) {
                     int tmp = arr[j];
                     int tmpI = arrI[j];
 

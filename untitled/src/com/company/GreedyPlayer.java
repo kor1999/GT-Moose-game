@@ -22,4 +22,9 @@ public class GreedyPlayer implements Player {
         }
         return (imax + 1);
     }
+
+    @Override
+    public String getEmail() {
+        return null;
+    }
 }

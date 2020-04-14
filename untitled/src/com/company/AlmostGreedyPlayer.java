@@ -30,4 +30,9 @@ public class AlmostGreedyPlayer implements Player {
 
         return arrI[1];
     }
+
+    @Override
+    public String getEmail() {
+        return null;
+    }
 }

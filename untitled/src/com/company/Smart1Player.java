@@ -33,4 +33,9 @@ public class Smart1Player implements Player {
         else
             return arrI[0];
     }
+
+    @Override
+    public String getEmail() {
+        return null;
+    }
 }

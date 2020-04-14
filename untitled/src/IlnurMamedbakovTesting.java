@@ -156,6 +156,8 @@ public class IlnurMamedbakovTesting {
 interface Player {
     void reset();
     int move(int opponentLastMove, int xA, int xB, int xC);
+    String getEmail();
+
 }
 
 class Smart1Player implements Player {
@@ -191,6 +193,11 @@ class Smart1Player implements Player {
         else
             return arrI[0];
     }
+
+    @Override
+    public String getEmail() {
+        return null;
+    }
 }
 
 class AlmostGreedyPlayer implements Player {
@@ -221,6 +228,11 @@ class AlmostGreedyPlayer implements Player {
 
         return arrI[1];
     }
+
+    @Override
+    public String getEmail() {
+        return null;
+    }
 }
 
 class RandomPlayer implements Player {
@@ -233,6 +245,11 @@ class RandomPlayer implements Player {
     @Override
     public int move(int opponentLastMove, int xA, int xB, int xC) {
         return (int) (1 + Math.random()*3);
+    }
+
+    @Override
+    public String getEmail() {
+        return null;
     }
 }
 
@@ -254,6 +271,11 @@ class GreedyPlayer implements Player {
             }
         }
         return (imax + 1);
+    }
+
+    @Override
+    public String getEmail() {
+        return null;
     }
 }
 
@@ -378,6 +400,11 @@ class IlnurMamedbakovCode implements Player {
         numberGames = numberGames + 1;
         return result;
 
+    }
+
+    @Override
+    public String getEmail() {
+        return "i.mamedbakov@innopolis.ru";
     }
 
     // This bubble sort returning indexes of sorted list

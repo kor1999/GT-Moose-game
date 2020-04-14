@@ -123,6 +123,11 @@ public class IlnurMamedbakovCode implements Player {
 
     }
 
+    @Override
+    public String getEmail() {
+        return "i.mamedbakov@innopolis.ru";
+    }
+
     // This bubble sort returning indexes of sorted list
     private ArrayList<Integer> sort(ArrayList<Integer> arr){
         ArrayList<Integer> arrI = new ArrayList<>();
